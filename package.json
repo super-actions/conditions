@@ -1,0 +1,22 @@
+{
+  "name": "@super-actions/conditions",
+  "version": "0.1.0",
+  "description": "Conditions for Github issues and pull requests.",
+  "main": "src/index.ts",
+  "repository": "git@github.com:super-actions/conditions.git",
+  "author": "Ivan Fonseca <ivanfon@riseup.net>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  }
+}
