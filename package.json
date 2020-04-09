@@ -6,6 +6,9 @@
   "repository": "git@github.com:super-actions/conditions.git",
   "author": "Ivan Fonseca <ivanfon@riseup.net>",
   "license": "GPL-3.0",
+  "engines": {
+    "node": "13"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write src/**/*.ts test/**/*.ts",
