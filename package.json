@@ -1,19 +1,31 @@
 {
   "name": "@super-actions/conditions",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Conditions for Github issues and pull requests.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:super-actions/conditions.git",
   "author": "Ivan Fonseca <ivanfon@riseup.net>",
   "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": "13"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf coverage dist mochawesome-report .nyc_output",
     "format": "prettier --write 'src/**/*.ts' 'test/**/*.ts'",
     "lint": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
+    "prepublish": "yarn build",
+    "preversion": "yarn test && yarn lint",
     "test": "TS_NODE_FILES=true mocha --require ts-node/register --require tsconfig-paths/register --extensions ts --reporter mochawesome --reporter-options html=true,json=false,inline=true 'test/**/*.test.ts'",
     "test:coverage": "tsc && nyc --reporter=lcov --reporter=text-summary yarn test",
     "test:watch": "TS_NODE_FILES=true mocha --require ts-node/register --require tsconfig-paths/register --extensions ts --watch --watch-files test 'test/**/*.test.ts'"

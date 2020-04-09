@@ -6,5 +6,5 @@
       "src/*": ["../src/*"]
     }
   },
-  "include": [".", "../typings"]
+  "include": [".", "../src"]
 }
