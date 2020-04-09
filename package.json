@@ -1,6 +1,6 @@
 {
   "name": "@super-actions/conditions",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Conditions for Github issues and pull requests.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
