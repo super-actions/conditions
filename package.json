@@ -16,7 +16,11 @@
     "trailingComma": "all"
   },
   "devDependencies": {
+    "@types/minimatch": "^3.0.3",
     "prettier": "^2.0.4",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4"
   }
 }
