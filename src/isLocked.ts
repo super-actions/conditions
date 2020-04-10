@@ -12,7 +12,7 @@ interface ConditionIsLocked {
 export const isLocked = (
   {
     /** Desired locked state - `true` for locked, `false` for not locked. */
-    value
+    value,
   }: ConditionIsLocked,
   issue: IssueProps | PRProps,
 ) => issue.locked === value;
